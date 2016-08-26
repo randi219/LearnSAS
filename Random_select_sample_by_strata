@@ -1,0 +1,6 @@
+/* random pick up one knee per person */
+proc surveyselect data = incoa_p0
+	method=srs n=1                /* srs: simple random selection           n=1: sample size from each strata*/
+	seed=2016 out=datu;
+	strata id;                    /* strata */
+run;
