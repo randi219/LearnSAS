@@ -1,0 +1,5 @@
+/* count unique id's */
+proc sql;
+  select count(distinct id) as uniq_id
+  from dataset;
+quit;
